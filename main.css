@@ -1,0 +1,251 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Work Sans', ;
+  color: #222;
+  background: #f7f5f0;
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #0499ff;
+}
+a:hover {
+  color: #6633ff;
+}
+
+/* Section Styles */
+
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Bellefair', serif;
+  font-weight:normal;
+  color: black;
+  background: white;
+}
+
+h1 {
+  font-weight:normal;
+  color: black;
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: white;
+}
+
+/* Section Styles */
+.main-header {
+  height:750px;
+  background: linear-gradient( #f2f2f2, transparent 50%),
+              linear-gradient(0deg, #fff,transparent),
+              #f2f2f2 url('/images/coffee.jpeg') no-repeat center;
+  background-size:cover;
+}
+
+.main-nav {
+  width: 100%;
+  min-height: 30px;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Bellefair', serif;
+  font-weight:normal;
+  color: black;
+  position:relatve;
+  margin: -60px auto;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight:normal;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Bellefair', serif;
+}
+.nav .name {
+  display: none;
+  font-family: 'Bellefair', serif;
+  font-weight: normal;
+}
+
+.nav li {
+  padding: 5px 10px 10px 10px;
+  font-family: 'Bellefair', serif;
+  font-weight: normal;
+  color: black;
+}
+
+.nav a {
+  transition: all .5s;
+}
+.nav a:hover {
+  color: white
+}
+
+header {
+  text-align: center;
+  background: url('images/coffee.jpeg') no-repeat top center ;
+  position:relative;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+  font-weight: normal;
+}
+header {
+  line-height: 1.5;
+}
+
+header .profile-image {
+  margin: 170px auto 5px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: all .5s;
+}
+
+header .profile-image:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.social-icon {
+  width:25px;
+  height:25px;
+}
+
+.media {
+    margin-left:-30px;
+}
+
+ul li {
+  list-style-type: none;
+  margin: 1px;
+  display:inline;
+}
+
+.paragraph {
+  background:white;
+  margin: 20% 25%;
+  opacity:.6;
+  padding:4px 2px;
+}
+
+footer {
+  width: 100%;
+  min-height: 10px;
+  padding: 20px 0 40px 20px;
+  font-family: 'Bellefair', serif;
+}
+
+footer .copyright {
+  top: -8px;
+  margin-right: 20px;
+  font-size: .5em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .5;
+  transition: all .25s;
+}
+a.twitter {
+  background-image: url(images/twitter.png);
+}
+a.linkedin {
+  background-image: url(images/linkedin.png);
+}
+a.github {
+  background-image: url(images/github.png);
+}
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+
+  .flex {
+      display: flex;
+      max-width: 1200px;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
+  header {
+    min-height: 450px;
+  }
+
+  .nav {
+    max-width: 1200px;
+  }
+
+  .nav .name {
+    display: block;
+    margin-right: auto;
+    color: black;
+  }
+
+  main {
+    padding-top: 50px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+}
+
+
+@media screen and (max-width: 720px) {
+  .paragraph {
+    margin: 100px 10px;
+  }
+
+  .nav .name {
+    display: inline;
+    color: black;
+  }
+}
